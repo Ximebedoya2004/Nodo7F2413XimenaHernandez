@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico"/>
+  </head>
+
+  <body>
+
+    <h1>Aquí te ayudaré a crear tus formularios, contáctame</h1>
+
+    <h2>Datos de mi contacto</h2>
+    <p><strong> Nombre: </strong> Ximena Hernandez 
+    <strong> Teléfono: </strong> 3122787565 
+    <strong> Email:</strong> ximenahernandez.6572gmail.com
+    <strong> Usuario Github:</strong> Ximebedoya2004</p>
+    <p> En mi Github pueden encontrar éste ejemplo de contacto para que se guíen</p>
+
+    <h2>Formulario de Contacto</h2>
+
+    <form method="get">
+    
+      <fieldset>
+        <legend><strong>Datos personales</strong></legend>
+
+        <label for="name"><strong>Nombre:</strong> </label>
+        <input id="name" name="name" type="text"/>
+
+        <label for="lastname"><strong>Apellido: </strong> </label>
+        <input id="lastname" name="lastname" type="text"/><br />
+
+        <label><strong>Género: </strong></label>
+        <input id="gender--male" name="gender" type="radio" value="male" />
+
+        <label for="gender--male"><strong>Masculino</strong></label>
+        <input id="gender--female" name="gender" type="radio" value="female" />
+
+        <label for="gender--female"><strong>Femenino</strong></label>
+       
+      </fieldset>
+
+      <fieldset>
+
+        <legend><strong>Datos para contactar</strong></legend>
+
+        <label for="email"><strong>Correo electrónico:</strong></label>
+        <input id="email" name="email" type="email"/>
+
+        <label for="telefono"><strong>Teléfono:</strong></label>
+        <input id="telefono" name="telefono" type="tel" />
+        
+        <label for="direccion"><strong>Dirección:</strong></label>
+        <input id="direccion" name="direccion" type="text" />
+
+      </fieldset>
+
+      <fieldset>
+        <label for="ayuda"><strong>¿En qué puedo ayudarte?</strong></label><br/>
+
+        <select id="ayuda" name="type">
+          <option value="">Selecciona una opción</option>
+          <option value="asesoria">quiero tu asesoría</option>
+          <option value="sugerencia">sugerencia</option>
+        </select>
+        <br />
+
+        <label for="description"><strong>Si tienes una sugerencia ponla acá</strong></label><br/>
+
+        <textarea id="description" name="description"></textarea><br/>
+
+      </fieldset>
+      <button type="reset"><strong>Limpiar</strong></button>
+      <button type="submit"><strong>Enviar</strong></button>
+    </form>
+  </body>
+
+</html>
