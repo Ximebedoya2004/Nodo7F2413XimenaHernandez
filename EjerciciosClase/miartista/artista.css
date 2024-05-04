@@ -1,0 +1,102 @@
+
+/* Normalizar las márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Establecer color de fondo para la página */
+  body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+  } 
+  
+  
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
+
+  h2:nth-last-of-type(1){
+    text-align: center;
+    color: rgb(240, 40, 40);
+  }
+
+  h2:nth-last-of-type(7){
+    text-align: center;
+    color: #555(216, 240, 234);
+  }
+
+  h2:nth-last-of-type(8){
+    text-align: none;
+    color: #110a7a(216, 240, 234);
+  }
+
+  /* Estilos para los párrafos */
+  p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1em;
+  }
+ 
+  
+  /* Modificar los bullets de la lista de discografía */
+  .disco li:before {
+    content: '🎵';
+    margin-right: 0.5em;
+  }
+
+  .spotify {
+      list-style-type: square; 
+  }
+
+  .gustos {
+    list-style-type: square;
+  }
+
+
+  /* Enmarcar las imágenes */
+  img {
+    border: 3px solid #333;
+    margin: 0 auto;
+    display: block;
+    max-width: 20%;
+    height: auto;
+  }
+
+  .img1{
+    border: 3px solid #333;
+    display: inline-block;
+    max-width: 20%;
+    height: auto;
+    margin: 0 auto;
+ 
+  }
+
+  .img2{
+    border: 3px solid #333;
+    display: inline-block;
+    max-width: 20%;
+    height: auto;
+  
+  }
+
+   /* Estilos personalizados para los enlaces */
+  .boton a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #94cf96;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+  }
+
+ 
+  
