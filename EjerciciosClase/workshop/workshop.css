@@ -1,0 +1,241 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(236, 156, 230, 0.1);
+  font-size: 16px; /* Tamaño base de fuente */
+}
+
+/* Estilos para la tarjeta de presentación */
+.tarjeta {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  display: none; /* Ocultar la tarjeta por defecto */
+}
+
+.tarjeta .img {
+  width: 12.5rem;
+  height: 13.75rem; 
+  border-radius: 60%;
+  margin-bottom: 20px;
+  float: left;
+  margin-right: 20px;
+  box-shadow: 0 0 0 8px rgba(236, 30, 192, 0.06);
+  transition: .2s;
+}
+
+.tarjeta .img:hover {
+  box-shadow: 0 0 0 12px rgba(224, 23, 208, 0.1);
+}
+
+.tarjeta h1 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5rem; 
+}
+
+.tarjeta h2 {
+  color: #666;
+  margin-top: 5px;
+  font-size: 1.25rem; 
+}
+
+.tarjeta p {
+  font-size: 1rem; 
+}
+
+.tarjeta .redes-sociales {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tarjeta .redes-sociales a {
+  display: inline-block;
+  padding: 0.3125rem 0.625rem;
+  background-color: #bc77c2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 0.875rem; 
+  text-align: center;
+}
+
+.tarjeta .redes-sociales a:hover {
+  background-color: #c53aca;
+  transform: translateY(-2px);
+}
+
+.tarjeta .redes-sociales a:active {
+  transform: translateY(0);
+}
+
+.tarjeta a {
+  display: inline-block;
+  padding: 0.3125rem 0.625rem; 
+  background-color: #bc77c2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+  font-size: 0.875rem; 
+}
+
+.tarjeta a:hover {
+  background-color: #c53aca;
+}
+
+/* Estilos para el currículum */
+.container {
+  max-width: 800px;
+  margin: 40px auto 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(214, 128, 231, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  background-color: rgba(224, 23, 208, 0.1);
+  padding: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-top: 20px;
+}
+
+.profile {
+  width: 9.375rem; 
+  height: 9.375rem; 
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #876492;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profile img:hover {
+  box-shadow: 0 0 0 12px rgba(224, 23, 208, 0.1);
+  transform: scale(1.1);
+}
+
+.header-info {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+.info{
+  text-align: center;
+}
+
+.header h2 {
+  color: gray;
+  font-size: 1.25rem; 
+}
+
+.header h1 {
+  margin-bottom: 5px;
+  font-size: 1.75rem; 
+  color: black;
+}
+
+.header p {
+  font-size: 1rem; 
+  margin-bottom: 5px;
+  color: black;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main .section {
+  margin-bottom: 20px;
+}
+
+.main h2 {
+  font-size: 1.5rem; 
+  color: #630e7a;
+}
+
+.item h3 {
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 1.125rem; 
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.skills li {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0.3125rem 0.625rem; 
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 0.875rem; 
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    display: none; /* Ocultar el currículum en dispositivos móviles */
+  }
+
+  .tarjeta {
+    display: block; /* Mostrar la tarjeta en dispositivos móviles */
+  }
+  
+  .tarjeta h1 {
+    font-size: 2rem; 
+  }
+
+  .tarjeta h2 {
+    font-size: 1.5rem; 
+  }
+
+  .tarjeta p {
+    font-size: 1.125rem;
+  }
+
+  .tarjeta .redes-sociales {
+    flex-direction: column; /* Cambiar a columna para que los enlaces estén uno debajo del otro */
+  }
+
+  .tarjeta .redes-sociales a {
+    font-size: 1rem; 
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;   
+  }
+}
